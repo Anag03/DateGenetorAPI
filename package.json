@@ -1,0 +1,17 @@
+{
+  "name": "my-vercel-project",
+  "version": "1.0.0",
+  "description": "A simple API that generates random dates based on provided offsets.",
+  "main": "index.js",
+  "dependencies": {
+    "moment-timezone": "^0.5.33",
+    "vercel": "^1.0.0"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "vercel start"
+  },
+  "author": "Ana Gallardo",
+  "license": "MIT"
+}
