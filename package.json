@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "vercel dev",
     "build": "vercel build",
-    "start": "vercel start"
+    "start": "vercel start",
+    "install": "yarn install"
   },
   "author": "Ana Gallardo",
   "license": "MIT"
