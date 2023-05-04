@@ -32,6 +32,8 @@ app.get('/random_date', (req, res) => {
   });
 });
 
+// Export the app instance
+module.exports = app;
 
 app.listen(3000, () => {
   console.log('Server started on port 3000');
