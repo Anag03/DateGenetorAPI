@@ -29,7 +29,9 @@ app.get('/random_date', (req, res) => {
   res.send({
     startDateTime: startDateTime,
     endDateTime: endDateTime,
-  });
+   });
+});
+
 // Export the app instance
 module.exports = app;
 
