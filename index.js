@@ -26,10 +26,10 @@ app.get('/random_date', (req, res) => {
   const endDateTime = endDate.toISOString().substring(0, 10) + ' ' + endDate.toLocaleTimeString('en-GB');
 
   // Send the start and end date/time as a JSON response
-  res.send(
-    startDateTime);
-});
-
+  res.send({
+    startDateTime: startDateTime,
+    endDateTime: endDateTime,
+  });
 // Export the app instance
 module.exports = app;
 
