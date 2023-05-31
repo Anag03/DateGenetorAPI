@@ -24,13 +24,14 @@ app.get('/random_date', (req, res) => {
   // Format start and end date/time as ISO strings with timezones
   const startDateTime = startDate.toISOString().substring(0, 10) + ' ' + startDate.toLocaleTimeString('en-GB');
   const endDateTime = endDate.toISOString().substring(0, 10) + ' ' + endDate.toLocaleTimeString('en-GB');
+  const formattedDate = randomDate.toISOString().substring(0, 10);
+
 
   // Send the start and end date/time as a JSON response
   res.send({
     startDateTime: startDateTime,
     endDateTime: endDateTime,
-    startDate: startDate,
-    endDate: endDate
+    formattedDate: formattedDate,
    });
 });
 
