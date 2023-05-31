@@ -29,6 +29,8 @@ app.get('/random_date', (req, res) => {
   res.send({
     startDateTime: startDateTime,
     endDateTime: endDateTime,
+    startDate: startDate,
+    endDate: endDate
    });
 });
 
