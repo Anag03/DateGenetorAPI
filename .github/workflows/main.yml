@@ -9,7 +9,7 @@ jobs:
       uses: RapidAPI/gh-api-testing-trigger@v0.0.3
       with:
         test: 'test_310a6230-95a8-4753-902c-90637fbc5ba8'
-        location: 'AWS-US-EAST-1'
-        environment: 'environment_23ac1850-3ffa-466a-9314-b93a2a81cd6a'
+        location: 'AWS-EU-WEST-3'
+        environment: 'sandbox'
     - name: Show Results
       run: echo "The test took ${{ steps.tstExec.outputs.time }}ms to run"; echo "The test result was ${{ steps.tstExec.outputs.computedStatus }}"; echo "View Report - ${{ steps.tstExec.outputs.reportUrl }}"
