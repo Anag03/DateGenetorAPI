@@ -1,0 +1,15 @@
+on: [push]
+jobs:
+  run_api_test:
+    runs-on: ubuntu-latest
+    name: Execute RapidAPI API Tests
+    steps:
+    - name: Execute Tests
+      id: tstExec
+      uses: RapidAPI/gh-api-testing-trigger@v0.0.3
+      with:
+        test: 'test_d65899ba-452f-4775-a5aa-7e947f391ce1'
+        location: 'AWS-EU-WEST-3'
+        environment: 'sandbox'
+    - name: Show Results
+      run: echo "The test took ${{ steps.tstExec.outputs.time }}ms to run"; echo "The test result was ${{ steps.tstExec.outputs.computedStatus }}"; echo "View Report - ${{ steps.tstExec.outputs.reportUrl }}"
